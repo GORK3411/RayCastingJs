@@ -1,0 +1,45 @@
+:root{
+    --height : 400;
+    --width : 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas{
+    border: 1px solid black;
+}
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.minimap
+{
+    display: none;
+    position: absolute;
+    background-color: yellow;
+    margin-top: 0;
+    height: var(--height);
+    width: var(--width);
+}
+.p{
+    width: 100%;
+    height: 100%;
+}
+
+
+#EDITBut
+{
+ position: absolute;   
+ background-color: transparent;
+ border: none;
+ outline: none;
+ font-size: 1.5rem;
+ border: 800;
+ cursor: pointer;
+ z-index: 3;
+ left: 96%;
+ top: 10px;
+}

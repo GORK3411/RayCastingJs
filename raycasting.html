@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Canvas</title>
+    <script src="canvas.js" defer></script>
+    <script src="3D.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <button id="EDITBut">EDIT</button>
+    <canvas id="2d" class="minimap"></canvas>
+    <canvas id="3d" class="p"></canvas>
+  </body>
+
+  <script>
+    let visible = false;
+    document.getElementById("EDITBut").addEventListener("click", () => {
+      if (!visible) {
+        document.getElementById("2d").style.display = "block";
+        visible = true;
+      } else {
+        visible = false;
+        document.getElementById("2d").style.display = "none";
+      }
+    });
+  </script>
+</html>
