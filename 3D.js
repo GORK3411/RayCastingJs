@@ -31,9 +31,6 @@ function drawRect() {
       diffAngle = diffAngle - 2 * Math.PI;
     }
     line = (wallsize * height3d) / a;
-    if (line > 350) {
-      line = 350;
-    }
 
     context3d.fillRect(
       (width3d * i) / totalRays,
