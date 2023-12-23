@@ -54,12 +54,12 @@ function drawMap() {
     for (wallx = 0; wallx < map[wally].length; wallx++) {
       if (map[wally][wallx] == 1) {
         new DrawSquare(wallx * wallsize, wally * wallsize, wallsize, "green");
-        context2d.beginPath();
-        context2d.moveTo(wallx * wallsize, 0);
-        context2d.strokeStyle = "brown";
-        context2d.lineTo(wallx * wallsize, wallsize * map.length);
-        context2d.stroke();
       }
+      context2d.beginPath();
+      context2d.moveTo(wallx * wallsize, 0);
+      context2d.strokeStyle = "brown";
+      context2d.lineTo(wallx * wallsize, wallsize * map.length);
+      context2d.stroke();
       context2d.beginPath();
       context2d.moveTo(0, wally * wallsize);
       context2d.strokeStyle = "brown";
